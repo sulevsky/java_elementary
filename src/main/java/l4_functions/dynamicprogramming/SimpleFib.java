@@ -1,23 +1,16 @@
 package l4_functions.dynamicprogramming;
 
-/**
- * Created by VSulevskiy on 28.06.2015.
- */
 public class SimpleFib {
-    public static boolean f() {
-        System.out.println("In f");
-        return false;
-    }
-
-    public static boolean s() {
-        System.out.println("In s");
-        return true;
+    public static long getFibNumber(int index) {
+        if (index == 1 || index == 2) {
+            return 1;
+        } else {
+            return getFibNumber(index - 1) + getFibNumber(index - 2);
+        }
     }
 
     public static void main(String[] args) {
-        if ( s() | f()) {
-            System.out.println("In clause");
-        }
+//        System.out.println(getFibNumber(50));
 //        for (int i = 1; i <= 10; i++) {
 //            System.out.println(i + " :\t " + getFibNumber(i));
 //        }
@@ -41,13 +34,7 @@ public class SimpleFib {
 
     }
 
-    public static long getFibNumber(int index) {
-        if (index == 1 || index == 2) {
-            return 1;
-        } else {
-            return getFibNumber(index - 1) + getFibNumber(index - 2);
-        }
-    }
+
 
     public static long getFibNumberDynamic(int index, long[] cache) {
         long result;
