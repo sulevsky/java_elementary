@@ -2,6 +2,8 @@ package l4_functions;
 
 import java.util.Arrays;
 
+import l5_basics_oop.Student;
+
 public class TestArrayChange {
     public static void main(String[] args) {
         int v = 10;
