@@ -1,4 +1,4 @@
-package inheritance;
+package l8_interface;
 
 import l5_basics_oop.Student;
 

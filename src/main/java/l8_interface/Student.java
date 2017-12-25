@@ -1,12 +1,11 @@
-package inheritance;
+package l8_interface;
 
-public class Student extends Person{
+public class Student extends Person  {
 
     private int[] marks;
 
     public Student(String firstName, String lastName, int[] marks) {
         super(firstName, lastName);
-        super.getFirstName();
         this.marks = marks;
     }
 
@@ -14,7 +13,13 @@ public class Student extends Person{
         return marks;
     }
 
-    public void setMarks(int[] marks) {
+    public void setMarks(final int[] marks) {
         this.marks = marks;
     }
+
+    @Override
+    public void greet() {
+        System.out.println("Hello, my name is " + this.getFirstName());
+    }
+
 }
