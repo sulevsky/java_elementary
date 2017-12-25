@@ -1,6 +1,6 @@
 .idea
 *.iml
-out
+out/
 *.class
 
 *.log
@@ -13,4 +13,4 @@ out
 *.rar
 
 hs_err_pid*
-.gradle
+.gradle/
