@@ -4,18 +4,9 @@ import java.util.Collection;
 import java.util.Iterator;
 
 public class MyLinkedList implements Collection {
-    private Node head;
 
-    @Override
-    public int size() {
-        Node current = head;
-        int result = 0;
-        while (current != null) {
-            result++;
-            current = current.getNext();
-        }
-        return result;
-    }
+    private Node head;
+    private int size;
 
     @Override
     public boolean isEmpty() {
@@ -23,11 +14,17 @@ public class MyLinkedList implements Collection {
     }
 
     @Override
+    public int size() {
+        return size;
+    }
+
+    @Override
     public boolean contains(Object o) {
+
+
         Node current = head;
         while (current != null) {
-            //TODO here
-            if (current.getData() == o) {
+            if (current.getData().equals(o)) {
                 return true;
             }
             current = current.getNext();
@@ -51,22 +48,15 @@ public class MyLinkedList implements Collection {
 
     @Override
     public boolean add(Object o) {
-
-        Node next = new Node(o, null);
-        if (head == null) {
-            head = next;
-        } else {
-            Node toAdd = head;
-            while (toAdd.getNext() != null) {
-                toAdd = toAdd.getNext();
-            }
-            toAdd.setNext(next);
-        }
+        Node next = new Node(o, head);
+        size++;
+        head = next;
         return true;
     }
 
     @Override
     public boolean remove(Object o) {
+        size--;
         return false;
     }
 
@@ -80,10 +70,11 @@ public class MyLinkedList implements Collection {
 
     @Override
     public void clear() {
+        size = 0;
         head = null;
     }
 
-    //TODO WTF
+    //FIXME WTF
     @Override
     public Iterator iterator() {
         return null;
