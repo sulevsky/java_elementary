@@ -50,7 +50,7 @@ public class MyVector implements Collection {
 
     @Override
     public Object[] toArray() {
-        return new Object[0];
+        return array;
     }
 
     @Override

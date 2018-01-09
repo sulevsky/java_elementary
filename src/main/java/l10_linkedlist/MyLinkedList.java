@@ -34,6 +34,7 @@ public class MyLinkedList implements Collection {
 
     @Override
     public Object[] toArray() {
+
         Object[] result = new Object[size()];
         Node current = head;
         int i = 0;

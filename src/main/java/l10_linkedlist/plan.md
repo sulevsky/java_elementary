@@ -8,13 +8,6 @@ LinkedList implementation
 equals and == difference (String example) (reflexive: for any non-null reference value x, x.equals(x) should return true, symmetric: for any non-null reference values x and y, x.equals(y) should return true if and only if y.equals(x) returns true, transitive: for any non-null reference values x, y, and z, if x.equals(y) returns true and y.equals(z) returns true, then x.equals(z) should return true, consistent: for any non-null reference values x and y, multiple invocations of x.equals(y) consistently return true or consistently return false, provided no information used in equals comparisons on the objects is modified, For any non-null reference value x, x.equals(null) should return false.)
 
 Wrapper classes
-Iterator pattern
-
-LinkedList implementation
-Singleton pattern (eager instantiation)
-
-
-
 
 ####Task:
 1. Реализовать простой контейнер (MyCollection) для всего на базе связного списка
