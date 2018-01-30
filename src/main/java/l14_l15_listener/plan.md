@@ -1,7 +1,7 @@
 
 ## OOP (Object-oriented programming)
 
-####Plan:
+#### Plan:
 Single linked list reverse
 
 Comparable 
@@ -11,7 +11,7 @@ Tree
 Listener
 Usage of pattern Listener in Swing 
 
-####Task:
+#### Task:
 1. Tic-tac-toe
 
 
