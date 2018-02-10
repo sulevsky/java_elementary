@@ -2,19 +2,19 @@
 ## OOP (Object-oriented programming)
 
 ####Plan:
-Single linked list reverse
+- compile time errors vs. runtime errors (fail fast)
+- another parameter - type
+- benefits (stronger type checks, no casts, generic approach)
+- Pair<Object> example
+- Pair<T> example
+- declaration
+- instantiation (diamond)
+- multiple type parameters
+- back to raw types
+- generic methods
+- extends keyword - bounded type parameters
 
-Comparable 
-Collection API - Set
-
-Tree
-Listener
 
 ####Task:
- Tic-tac-toe
 
-
-Реализовать итератор для дерева бинарного поиска
-Nested classes (static and non-static (inner))
-Access modifiers (private, public, protected, or package private.) 
-Outer classes only public or package private. (grouping classes used in one place, increases encapsulation, more readable and maintainable code)
+Add type check to collections
