@@ -1,5 +1,7 @@
 package l9_collection;
 
+import java.io.IOException;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -40,16 +42,15 @@ public class MyVectorTest {
     }
 
     @Test
+    @Ignore
     public void sizeNotEmpty() {
         vector.add(new Object());
         assertTrue("Incorrect size", vector.size() == 3);
         System.out.println(2);
     }
 
-    @Test
+    @Test(expected = IOException.class)
     public void sizeNotEmpty1() {
-        vector.add(new Object());
         assertTrue("Incorrect size", vector.size() == 1);
-        System.out.println(3);
     }
 }
