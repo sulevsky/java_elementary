@@ -39,4 +39,11 @@ public class Person {
         return lastName != null ? lastName.equals(person.lastName) : person.lastName == null;
     }
 
+    @Override
+    public String toString() {
+        return "Person{" +
+               "firstName='" + firstName + '\'' +
+               ", lastName='" + lastName + '\'' +
+               '}';
+    }
 }

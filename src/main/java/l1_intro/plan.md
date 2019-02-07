@@ -1,17 +1,17 @@
 ## 1 - Introduction
 
-####Plan: 
+#### Plan: 
 Environment setup  
 Java platform
 
-####Setup files:
+#### Setup files:
 Все можно скачать в интернете или по ссылке 
 
-####Books:
+#### Books:
 [Link](https://drive.google.com/folderview?id=0B0LifEnsrQMkfk1GMDN1TjJZWVBWYUJnaDR3a3pmRk1nbEttczFNam56TEp1Y1V5OVhTWVk&usp=sharing)
 
 
-####Task:
+#### Task:
 1. Настроить среду (JDK, IDEA)  
 1. Зарегистрироваться на GitHub   
 1. Создать репозиторий и подключить к IDEA

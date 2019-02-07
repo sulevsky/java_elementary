@@ -30,7 +30,8 @@ public class MyVector implements Collection {
 
     @Override
     public int size() {
-        throw new NullPointerException();
+        return array.length;
+//        throw new NullPointerException();
     }
 
     @Override
