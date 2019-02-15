@@ -1,25 +1,24 @@
 package l8_interface;
 
-public class Student extends Person  {
+public class Student implements Greetable {
+    private String firstName;
+    private String lastName;
 
-    private int[] marks;
-
-    public Student(String firstName, String lastName, int[] marks) {
-        super(firstName, lastName);
-        this.marks = marks;
-    }
-
-    public int[] getMarks() {
-        return marks;
-    }
-
-    public void setMarks(final int[] marks) {
-        this.marks = marks;
+    public Student(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
     @Override
     public void greet() {
-        System.out.println("Hello, my name is " + this.getFirstName());
+        System.out.println("Hello, my name is " + firstName + " " + lastName);
     }
 
+    @Override
+    public String toString() {
+        return "Student{" +
+               "firstName='" + firstName + '\'' +
+               ", lastName='" + lastName + '\'' +
+               '}';
+    }
 }

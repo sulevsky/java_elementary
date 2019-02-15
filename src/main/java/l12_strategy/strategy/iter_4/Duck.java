@@ -4,6 +4,7 @@ import l12_strategy.strategy.iter_4.fly.FlyBehavior;
 import l12_strategy.strategy.iter_4.quack.QuackBehavior;
 
 public class Duck {
+    int id;
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
 
@@ -25,5 +26,17 @@ public class Duck {
 
     public void setFlyBehavior(FlyBehavior flyBehavior) {
         this.flyBehavior = flyBehavior;
+    }
+
+    @Override
+    public String toString() {
+        return "Duck{" +
+               "id=" + id + "}";
+    }
+
+    @Override
+    public boolean equals(Object o){
+        Duck duck = (Duck)o;
+        return duck.id == id;
     }
 }

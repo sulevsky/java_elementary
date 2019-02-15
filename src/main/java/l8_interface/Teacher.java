@@ -1,33 +1,23 @@
 package l8_interface;
 
-public abstract class Teacher extends Person {
-    private String otchestvo;
-    private String degree;
+public class Teacher implements Greetable {
+    private String firstName;
+    private String lastName;
 
-    public Teacher(String firstName, String otchestvo, String lastName) {
-        super(firstName, lastName);
-        this.otchestvo = otchestvo;
+    public Teacher(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
     }
 
-    public String getOtchestvo() {
-        return otchestvo;
+    private String getFirstName() {
+        return "123";
     }
 
-    public void setOtchestvo(String otchestvo) {
-        this.otchestvo = otchestvo;
+    private String getLastName() {
+        return lastName;
     }
 
-    public String getDegree() {
-        return degree;
-    }
-
-    public void setDegree(String degree) {
-        this.degree = degree;
-    }
-
-    @Override
     public void greet() {
-        System.out.println("Dobriy den', zvonok dlya uchitelya");
+        System.out.println("Good afternoon, my name is " + getFirstName() + " " + getLastName());
     }
 }
-

@@ -1,22 +1,31 @@
 package l12_strategy.strategy.iter_3;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        List list = new ArrayList();
+        Duck mallard = new MallardDuck();
+        Duck redHead = new RedheadDuck();
+        Duck rubber = new RubberDuck();
 
-        list.add(10);
-        list.add(110);
-        list.add(4);
+        List<Duck> ducks = new ArrayList<>();
+        ducks.add(mallard);
+        ducks.add(redHead);
+        ducks.add(rubber);
 
-        Comparator comparator = new DescendingComparator();
-        System.out.println(list);
-        Collections.sort(list, Comparator.naturalOrder());
-        System.out.println(list);
+
+        new Main().pound(ducks);
+
+    }
+
+    public  void pound(List<Duck> ducks){
+        for (Duck duck: ducks){
+            duck.swim();
+            duck.quack();
+            duck.display();
+            duck.fly();
+        }
 
     }
 }

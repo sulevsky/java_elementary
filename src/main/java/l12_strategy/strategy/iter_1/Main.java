@@ -1,8 +1,5 @@
 package l12_strategy.strategy.iter_1;
 
-/**
- * Created by VSulevskiy on 07.05.2015.
- */
 public class Main {
     public static void main(String[] args) {
         Duck mallard = new MallardDuck();
@@ -17,8 +14,4 @@ public class Main {
         mallard.display();
         redHead.display();
     }
-
-
-
-
 }

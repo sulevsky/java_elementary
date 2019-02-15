@@ -1,8 +1,5 @@
 package l12_strategy.strategy.iter_2;
 
-/**
- * Created by VSulevskiy on 07.05.2015.
- */
 public class Duck{
     public void quack(){
         System.out.println("Quack");
